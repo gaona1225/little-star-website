@@ -9,7 +9,7 @@ localhost
 
 ### 运行程序 
 ```
-npm install
+npm install --save-dev
 npm start     
 http://localhost:5000/index
 http://localhost:5000/list
