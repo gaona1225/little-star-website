@@ -1,0 +1,19 @@
+/**
+ *样式函数
+*/
+/**
+ * px  转化位 rem
+ * iphone6设计稿  html 根节点的font-size 位37.5px
+ *
+ */
+/*px2rem(px) {
+    px / 75 * 1rem;
+}*/
+@mixin borderfn($color) {
+    border: 1px solid $color;
+}
+
+$baseFontSize: 75;
+@mixin px2rem($name, $px) {
+    #{$name}: $px / $baseFontSize * 1rem;
+}

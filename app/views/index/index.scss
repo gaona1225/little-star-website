@@ -1,0 +1,9 @@
+/*--- style index.html ---*/
+@import '../../common/style/mainfn.scss';
+
+$color: #aaaaaa;
+.goldStar-indexpage {
+    color: $color;
+    @include borderfn(red);
+    @include px2rem(font-size, 30);
+}
