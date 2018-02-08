@@ -4,5 +4,6 @@
 /*--- reset end ---*/
 
 body {
+    font-family: "PingFang SC, Helvetica, sans-serif, Microsoft Yahei";
     @include px2rem(font-size, 30);
 }
