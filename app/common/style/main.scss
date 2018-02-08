@@ -2,3 +2,7 @@
 @import './mainfn.scss';
 @import './reset.scss';
 /*--- reset end ---*/
+
+body {
+    @include px2rem(font-size, 30);
+}
