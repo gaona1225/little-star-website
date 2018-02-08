@@ -5,7 +5,8 @@
 import React from 'react';
 import {
     Link
-} from 'react-router-dom'
+} from 'react-router-dom';
+import Header from '../../components/header.jsx';
 
 /*const name = 'zhangsan';
 const IndexApp = (store) => {
@@ -39,6 +40,7 @@ export default class IndexApp extends React.Component {
     render() {
         return (
             <div className = "goldStar-indexpage">
+                <Header />
                 hi {this.state.name}, 欢迎来到goldStar-小金星幼儿园-首页!---IndexApp!
                 <p onClick = {this.handleClick}>点击我</p>
                 <p>

@@ -1,0 +1,14 @@
+/*--- style header.jsx ---*/
+@import '../common/style/mainfn.scss';
+
+.goldStar-component-header {
+    display: flex;
+    @include px2rem(padding, 10);
+    .goldStar-component-logo {
+        flex: 1;
+    }
+
+    .goldStar-component-nav {
+        
+    }
+}
