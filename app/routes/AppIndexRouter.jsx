@@ -4,11 +4,11 @@
  */
 import React from 'react';
 // import PropTypes from 'prop-types';
-// import { Switch, Router, Route } from 'react-router';
-// import createBrowserHistory from 'history/createBrowserHistory';
 
 import {
     BrowserRouter as Router,
+    Switch,
+    Redirect,
     Route,
     Link
 } from 'react-router-dom'
@@ -18,22 +18,16 @@ import IndexTest from '../home/containers/indexTest.jsx';
 
 const AppIndexRouter = (store) => {
     return (
-        // <div>
-//             <Router>
-//                 <Route path="/" component={IndexApp}/>
-//             </Router>
-//             <Router>
-//                 <Route path="/test" component={IndexTest}/>
-//             </Router>
-//         </div>
-
-            <Router>
-                <div>
-                    <Route path="/" component={IndexApp}/>
-                    <Route path="/test" component={IndexTest}/>
-                </div>
-            </Router>
-    )
+      <Router>
+          <div>
+              <Switch>
+                <Route path="/home" component={IndexApp}/>
+                <Route path="/test" component={IndexTest}/>
+                <Redirect from="/" to="/home" />
+              </Switch>
+          </div>
+      </Router>
+   )
 }
 
 export default AppIndexRouter
