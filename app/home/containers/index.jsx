@@ -6,7 +6,6 @@ import React from 'react';
 import {
     Link
 } from 'react-router-dom';
-// import * as axios from '../../common/js/axios.js';
 import Header from '../../components/layout/header.jsx';
 import Footer from '../../components/layout/footer.jsx';
 
