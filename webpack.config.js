@@ -60,6 +60,14 @@ module.exports = {
             {
                 test: /\.styl$/,
                 loader: 'style-loader!css-loader!stylus-loader'
+            },
+            {
+                test: /\.(png|jpg|gif)$/,
+                loader: 'url-loader?limit=1024'
+            },
+            {
+                test: /\.json$/,
+                loader: 'json-loader'
             }
         ]
     }

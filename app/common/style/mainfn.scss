@@ -9,8 +9,8 @@
 /*px2rem(px) {
     px / 75 * 1rem;
 }*/
-@mixin borderfn($color) {
-    border: 1px solid $color;
+@mixin borderfn($border, $color) {
+    #{$border}: 1px solid $color;
 }
 
 $baseFontSize: 75;

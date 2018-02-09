@@ -4,11 +4,55 @@
 .goldStar-component-header {
     display: flex;
     @include px2rem(padding, 10);
-    .goldStar-component-logo {
-        flex: 1;
-    }
+}
 
-    .goldStar-component-nav {
-        
+.goldStar-component-header-logo {
+    flex: 1;
+    @at-root {
+        .goldStar-component-header-logo-img {
+            background: url('../common/image/logo.png') no-repeat left center;
+            @include px2rem(width, 165);
+            @include px2rem(height, 50);
+            display: inline-block;
+        }
+    }
+}
+
+.goldStar-component-header-nav {
+    @include px2rem(width, 50);
+    @include px2rem(height, 50);
+    background: url('../common/image/mob-ct.png') no-repeat right center;
+}
+
+.goldStar-component-header-list {
+    background: #fff;
+    position: fixed;
+    @include px2rem(top, 50);
+    @include px2rem(left, 0);
+    @include borderfn(border-bottom, #eeeeee);
+    width: 100%;
+    display: none;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+    @at-root {
+        .showList {
+            display: block;
+            visibility: visible;
+        }
+        .goldStar-component-header-listElem {
+            @include px2rem(height, 60);
+            @include px2rem(line-height, 60);
+            @include px2rem(padding, 20);
+            display: block;
+            a {
+                color: #000;
+                span {
+                    @include px2rem(font-size, 20);
+                    @include px2rem(padding-left, 4);
+                    display: inline-block;
+                    color: #ccc;
+                }
+            }
+        }
     }
 }

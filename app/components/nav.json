@@ -1,0 +1,56 @@
+[
+    {
+        "href": "/about",
+        "text": "关于小金星",
+        "desc": "ABOUT US",
+        "isNewPage": true
+    },
+    {
+        "href": "/test",
+        "text": "四大教育品牌",
+        "desc": "BRANDS",
+        "isNewPage": false
+    },
+    {
+        "href": "/list",
+        "text": "小金星动态",
+        "desc": "NEWS",
+        "isNewPage": true
+    },
+    {
+        "href": "/test",
+        "text": "教育管理",
+        "desc": "EDUCATION",
+        "isNewPage": false
+    },
+    {
+        "href": "/test",
+        "text": "家园共育",
+        "desc": "TOGETHER",
+        "isNewPage": false
+    },
+    {
+        "href": "/about",
+        "text": "园所查找",
+        "desc": "SEARCH",
+        "isNewPage": true
+    },
+    {
+        "href": "/test",
+        "text": "加入小金星",
+        "desc": "HR",
+        "isNewPage": false
+    },
+    {
+        "href": "/list",
+        "text": "合作办学",
+        "desc": "JOIN US",
+        "isNewPage": true
+    },
+    {
+        "href": "/test",
+        "text": "金星燕商城",
+        "desc": "SHOPPING",
+        "isNewPage": false
+    }
+]
