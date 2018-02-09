@@ -70,7 +70,7 @@ export default class IndexTest extends React.Component {
                 requestResultObj.innerHTML = `请求成功,请求返回errorNo是${obj.errInfo.no}`;
             } else {
                 console.log(obj.errInfo.msg);
-                requestResultObj.innerHTML = `请求成功,,请求返回errorNo是${obj.errInfo.no},请求返回信息是${obj.errInfo.msg}`;
+                requestResultObj.innerHTML = `请求成功,请求返回errorNo是${obj.errInfo.no},请求返回信息是${obj.errInfo.msg}`;
             }
         }).catch((ex) => {
             console.log(ex);
