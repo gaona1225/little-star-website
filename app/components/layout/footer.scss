@@ -1,0 +1,16 @@
+/*--- style footer.jsx ---*/
+@import '../../common/style/mainfn.scss';
+
+.goldStar-component-footer {
+    background: #f39800;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    p {
+        @include px2rem(height, 50);
+        @include px2rem(line-height, 50);
+        color: #fff;
+        @include px2rem(padding-left, 10);
+        @include px2rem(padding-right, 10);
+    }
+}

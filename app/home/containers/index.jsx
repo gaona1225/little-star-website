@@ -7,6 +7,7 @@ import {
     Link
 } from 'react-router-dom';
 import Header from '../../components/layout/header.jsx';
+import Footer from '../../components/layout/footer.jsx';
 
 /*const name = 'zhangsan';
 const IndexApp = (store) => {
@@ -46,6 +47,7 @@ export default class IndexApp extends React.Component {
                 <p>
                     <Link to="/test">to IndexTest Page</Link>
                 </p>
+                <Footer />
             </div>
         )
     }
