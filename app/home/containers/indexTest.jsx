@@ -3,7 +3,9 @@
  * @author gaona
  */
 import React from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
+
 
 /*const IndexTest = (store) => {
     return (
@@ -15,6 +17,7 @@ import { Link } from 'react-router-dom';
 
 export default IndexTest*/
 
+
 export default class IndexTest extends React.Component {
     constructor (props) {
         super(props);
@@ -25,34 +28,56 @@ export default class IndexTest extends React.Component {
         }
     }
 
+
     handleClickList (e) {
         e.preventDefault();
         console.log('handleClickList');
         location.replace('/list');
     }
 
+
     handleClickRequest (e) {
         e.preventDefault(e);
         console.log('handleClickRequest');
-        fetch('/getRequest').then((res) => {
-            if (res.ok) {
-                let requestResultObj = document.getElementById('handleClickRequestTest');
-                res.json().then((obj) => {
-                    console.log('res ok');
-                    console.log(obj.errInfo.no);
-                    if (obj.errInfo.no === '0') {
-                        console.log('成功');
-                        requestResultObj.innerHTML = `请求成功,请求返回errorNo是${obj.errInfo.no}`;
-                    } else {
-                        console.log(obj.errInfo.msg);
-                        requestResultObj.innerHTML = `请求成功,,请求返回errorNo是${obj.errInfo.no},请求返回信息是${obj.errInfo.msg}`;
-                    }
-                });
+        // fetch es6默认请求，类似ajax 但是只有在最新版浏览器兼容,使用axios https://www.jianshu.com/p/df464b26ae58
+        // fetch('/getRequest').then((res) => {
+//                 if (res.ok) {
+//                     let requestResultObj = document.getElementById('handleClickRequestTest');
+//                     res.json().then((obj) => {
+//                         console.log('res ok');
+//                         console.log(obj.errInfo.no);
+//                         if (obj.errInfo.no === '0') {
+//                             console.log('成功');
+//                             requestResultObj.innerHTML = `请求成功,请求返回errorNo是${obj.errInfo.no}`;
+//                         } else {
+//                             console.log(obj.errInfo.msg);
+//                             requestResultObj.innerHTML = `请求成功,,请求返回errorNo是${obj.errInfo.no},请求返回信息是${obj.errInfo.msg}`;
+//                         }
+//                     });
+//                 }
+//             }, (ex) => {
+//                 console.log(ex);
+//             });
+        
+        axios.get('/getRequest').then(res => {
+            if (!res.data) {
+                return;
             }
-        }, (ex) => {
+            let obj = res.data;
+            let requestResultObj = document.getElementById('handleClickRequestTest');
+            if (obj.errInfo.no === '0') {
+                console.log('成功');
+                requestResultObj.innerHTML = `请求成功,请求返回errorNo是${obj.errInfo.no}`;
+            } else {
+                console.log(obj.errInfo.msg);
+                requestResultObj.innerHTML = `请求成功,,请求返回errorNo是${obj.errInfo.no},请求返回信息是${obj.errInfo.msg}`;
+            }
+        }).catch((ex) => {
             console.log(ex);
         });
+
     }
+
 
     render() {
         return (
