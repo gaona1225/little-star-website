@@ -5,4 +5,8 @@ $color: #aaaaaa;
 .goldStar-indexpage {
     color: $color;
     // @include borderfn(red);
+    .goldStar-request-msg {
+        color: #f00;
+        @include px2rem(font-size, 20);
+    }
 }

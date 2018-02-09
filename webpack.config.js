@@ -36,6 +36,11 @@ module.exports = {
             filename: 'views/list.html',
             chunks: ['main', 'list'],
             chunksSortMode: 'manual'
+        }),
+        new HtmlWepackPlugin({
+            template: './app/views/data/getRequest.html',
+            filename: 'views/data/getRequest.html',
+            chunksSortMode: 'manual'
         })
     ],
     module: {

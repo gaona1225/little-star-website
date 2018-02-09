@@ -68,6 +68,10 @@ app.get('/about', function (req, res) {
   res.render('views/about.html');
 });
 
+app.get('/getRequest', function (req, res) {
+  res.render('views/data/getRequest.html');
+});
+
 module.exports = app.listen(5000, function(err) {
     if (err) {
         console.log(err);

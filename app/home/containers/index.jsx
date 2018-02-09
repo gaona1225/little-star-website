@@ -6,6 +6,7 @@ import React from 'react';
 import {
     Link
 } from 'react-router-dom';
+// import * as axios from '../../common/js/axios.js';
 import Header from '../../components/layout/header.jsx';
 import Footer from '../../components/layout/footer.jsx';
 
@@ -35,6 +36,24 @@ export default class IndexApp extends React.Component {
     handleClick(e) {
         e.preventDefault(e);
         console.log('handleClick');
+        fetch('/getRequest').then((res) => {
+            if (res.ok) {
+                let requestResultObj = document.getElementById('requestResult');
+                res.json().then((obj) => {
+                    console.log('res ok');
+                    console.log(obj.errInfo.no);
+                    if (obj.errInfo.no === '0') {
+                        console.log('成功');
+                        requestResultObj.innerHTML = `请求成功,请求返回errorNo是${obj.errInfo.no}`;
+                    } else {
+                        console.log(obj.errInfo.msg);
+                        requestResultObj.innerHTML = `请求成功,,请求返回errorNo是${obj.errInfo.no},请求返回信息是${obj.errInfo.msg}`;
+                    }
+                });
+            }
+        }, (ex) => {
+            console.log(ex);
+        });
     }
 
 
@@ -43,7 +62,10 @@ export default class IndexApp extends React.Component {
             <div className = "goldStar-indexpage">
                 <Header />
                 hi {this.state.name}, 欢迎来到goldStar-小金星幼儿园-首页!---IndexApp!
-                <p onClick = {this.handleClick}>点击我</p>
+                <p onClick = {this.handleClick}>
+                    点击我--发起请求
+                </p>
+                <p id="requestResult" className="goldStar-request-msg"></p>
                 <p>
                     <Link to="/test">to IndexTest Page</Link>
                 </p>
