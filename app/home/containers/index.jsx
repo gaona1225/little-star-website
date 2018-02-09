@@ -6,7 +6,7 @@ import React from 'react';
 import {
     Link
 } from 'react-router-dom';
-import Header from '../../components/header.jsx';
+import Header from '../../components/layout/header.jsx';
 
 /*const name = 'zhangsan';
 const IndexApp = (store) => {

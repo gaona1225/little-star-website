@@ -1,5 +1,5 @@
 /*--- style header.jsx ---*/
-@import '../common/style/mainfn.scss';
+@import '../../common/style/mainfn.scss';
 
 .goldStar-component-header {
     display: flex;
@@ -10,7 +10,7 @@
     flex: 1;
     @at-root {
         .goldStar-component-header-logo-img {
-            background: url('../common/image/logo.png') no-repeat left center;
+            background: url('../../common/image/logo.png') no-repeat left center;
             @include px2rem(width, 165);
             @include px2rem(height, 50);
             display: inline-block;
@@ -21,7 +21,7 @@
 .goldStar-component-header-nav {
     @include px2rem(width, 50);
     @include px2rem(height, 50);
-    background: url('../common/image/mob-ct.png') no-repeat right center;
+    background: url('../../common/image/mob-ct.png') no-repeat right center;
 }
 
 .goldStar-component-header-list {
