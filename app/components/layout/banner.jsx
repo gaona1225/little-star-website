@@ -20,7 +20,6 @@ export default class Banner extends React.Component {
     handleClick (e) {
         e.preventDefault();
         console.log('click');
-        //CHAT();
     }
 
     componentDidMount () {
