@@ -5,6 +5,7 @@
 import React from 'react';
 import './banner.scss';
 import $ from 'expose-loader?$!jquery';
+import CHAT from './common/test.js';
 
 
 export default class Banner extends React.Component {
@@ -18,17 +19,20 @@ export default class Banner extends React.Component {
 
     handleClick (e) {
         e.preventDefault();
+        console.log('click');
+        //CHAT();
     }
 
     componentDidMount () {
         console.log('componentDidMount');
         console.log($.fn.jquery);
+        CHAT();
     }
 
     render() {
         return (
             <div className = "goldStar-component-banner">
-                <ul>
+                <ul onClick = {this.handleClick}>
                     <li>111</li>
                     <li>222</li>
                 </ul>
