@@ -1,0 +1,7 @@
+/*--- style banner.jsx ---*/
+@import '../../common/style/mainfn.scss';
+
+.goldStar-component-banner {
+    width: 100%;
+    @include px2rem(height, 150);
+}

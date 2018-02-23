@@ -7,6 +7,7 @@ import {
     Link
 } from 'react-router-dom';
 import Header from '../../components/layout/header.jsx';
+import Banner from '../../components/layout/banner.jsx';
 import Footer from '../../components/layout/footer.jsx';
 
 /*const name = 'zhangsan';
@@ -20,7 +21,6 @@ const IndexApp = (store) => {
         </div>
     )
 }
-
 export default IndexApp*/
 
 export default class IndexApp extends React.Component {
@@ -60,6 +60,7 @@ export default class IndexApp extends React.Component {
         return (
             <div className = "goldStar-indexpage">
                 <Header />
+                <Banner />
                 hi {this.state.name}, 欢迎来到goldStar-小金星幼儿园-首页!---IndexApp!
                 <p onClick = {this.handleClick}>
                     点击我--发起请求

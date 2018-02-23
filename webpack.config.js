@@ -46,6 +46,10 @@ module.exports = {
     module: {
         loaders: [
             {
+                test: require.resolve('jquery'),
+                loader: 'expose-loader?$' 
+            },
+            {
                 test: /\.js|jsx$/,
                 loader: 'babel-loader',
                 query: {
