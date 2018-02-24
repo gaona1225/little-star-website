@@ -8,8 +8,8 @@ import {
 } from 'react-router-dom';
 import Header from '../../components/layout/header.jsx';
 import Banner from '../../components/layout/banner.jsx';
-import MainNav from '../../components/layout/mainNav.jsx';
 import Footer from '../../components/layout/footer.jsx';
+import MainNav from '../components/mainNav.jsx';
 
 /*const name = 'zhangsan';
 const IndexApp = (store) => {
