@@ -3,5 +3,8 @@
 
 .goldStar-component-banner {
     width: 100%;
-    @include px2rem(height, 150);
+    // @include px2rem(height, 150);
 }
+
+/*--- style slide banner ---*/
+@import './common/slideBanner/slideBanner.scss';
