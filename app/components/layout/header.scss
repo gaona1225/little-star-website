@@ -34,6 +34,7 @@
     display: none;
     visibility: hidden;
     transition: all .3s ease-in-out;
+    z-index: 1001;
     @at-root {
         .showList {
             display: block;

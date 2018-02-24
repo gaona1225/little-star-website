@@ -11,7 +11,7 @@ let ImgData = require('./common/slideBanner/slideBannerImg.json');
 
 ImgData = ((imgDataArr) => {
     for (let value of imgDataArr) {
-        value.imgUrl = require(`./common/slideBanner/img/${value.fileName}`);
+        value.imgUrl = require(`../../common/image/slideBanner/${value.fileName}`);
     }
     return imgDataArr;
 })(ImgData);
@@ -32,6 +32,7 @@ export default class Banner extends React.Component {
     }
 
     componentDidMount () {
+        console.log('componentDidMount');
         // console.log($.fn.jquery);
         $('#full_feature').swipeslider({
             prevNextButtons: false,
