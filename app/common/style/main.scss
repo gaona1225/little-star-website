@@ -6,4 +6,8 @@
 body {
     font-family: "PingFang SC, Helvetica, sans-serif, Microsoft Yahei";
     @include px2rem(font-size, 24);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }

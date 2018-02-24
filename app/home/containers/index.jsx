@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 import Header from '../../components/layout/header.jsx';
 import Banner from '../../components/layout/banner.jsx';
+import MainNav from '../../components/layout/mainNav.jsx';
 import Footer from '../../components/layout/footer.jsx';
 
 /*const name = 'zhangsan';
@@ -61,6 +62,7 @@ export default class IndexApp extends React.Component {
             <div className = "goldStar-indexpage">
                 <Header />
                 <Banner />
+                <MainNav />
                 hi {this.state.name}, 欢迎来到goldStar-小金星幼儿园-首页!---IndexApp!
                 <p onClick = {this.handleClick}>
                     点击我--发起请求

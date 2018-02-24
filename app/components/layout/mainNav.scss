@@ -1,0 +1,63 @@
+/*--- style mainNav.jsx ---*/
+@import '../../common/style/mainfn.scss';
+.goldStar-component-mainNav {
+    display: flex;
+    justify-content: space-between;
+
+    .goldStar-component-mainNav-list {
+        text-align: center;
+        @include px2rem(width, 200);
+        @include px2rem(height, 150);
+        @include px2rem(padding-top, 30);
+        color: #ff9104;
+        &:active {
+            background: #ff9104;
+            color: #fff;
+        }
+        dt {
+            @include px2rem(height, 100);
+        }
+        .dt-list-jj {
+            background: url('../../common/image/mainNav/m1-1.png') no-repeat center;
+            background-size: 100px 100px;
+            &:active {
+                background: url('../../common/image/mainNav/m1-2.png') no-repeat center;
+                background-size: 100px 100px;
+            }
+        }
+        .dt-list-gh {
+            background: url('../../common/image/mainNav/m2-1.png') no-repeat center;
+            background-size: 100px 100px;
+            &:active {
+                background: url('../../common/image/mainNav/m2-2.png') no-repeat center;
+                background-size: 100px 100px;
+            }
+        }
+        .dt-list-xc {
+            background: url('../../common/image/mainNav/m3-1.png') no-repeat center;
+            background-size: 100px 100px;
+            &:active {
+                background: url('../../common/image/mainNav/m3-2.png') no-repeat center;
+                background-size: 100px 100px;
+            }
+        }
+    }
+}
+
+.goldStar-component-mainNavCon {
+    @include px2rem(padding, 16);
+    h3 {
+        @include px2rem(font-size, 36);
+        color: #ff9104;
+    }
+    .mainNavCon-desc {
+        color: #ddd;
+        @include px2rem(font-size, 28);
+    }
+    .mainNavCon-msg {
+        @include px2rem(padding-top, 20);
+        @include px2rem(font-size, 30);
+        @include px2rem(letter-spacing, 1);
+        color: #999;
+    }
+}
