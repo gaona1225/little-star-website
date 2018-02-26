@@ -3,6 +3,7 @@
  * @author gaona
  */
 import React from 'react';
+import MainNav from './mainNav.jsx';
 import './join.scss';
 
 export default class Join extends React.Component {
@@ -21,9 +22,10 @@ export default class Join extends React.Component {
     render() {
         return (
             <div className = "goldStar-component-join">
-                <p>加入小金星，有爱有事业</p>
-                <p>Join Little Star, Love and Career</p>
+                <h3>加入小金星，有爱有事业</h3>
+                <h6>Join Little Star, Love and Career</h6>
                 <p>年轻赋予我们激情，我们把执着与热忱挥洒在这片热土上；爱让这个世界不停旋转,我们将用自己的实际工作来谱写感恩的篇章！</p>
+                <MainNav />
             </div>
         )
     }

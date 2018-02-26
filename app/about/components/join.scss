@@ -3,6 +3,27 @@
 
 .goldStar-component-join {
     @include px2rem(padding, 30);
-    text-align: center;
+    @include px2rem(margin-top, 60);
     background: url('../../common/image/publicImg/t12.png') no-repeat center bottom;
+    background-size: auto 100%;
+
+    h3 {
+        color: #333;
+        @include px2rem(font-size, 36);
+        text-align: center;
+    }
+
+    h6 {
+        color: #f39700;
+        @include px2rem(font-size, 28);
+        text-align: center;
+    }
+
+    p {
+        color: #666;
+        @include px2rem(font-size, 30);
+        @include px2rem(line-height, 50);
+        @include px2rem(margin-top, 30);
+        @include px2rem(margin-bottom, 30);
+    }
 }

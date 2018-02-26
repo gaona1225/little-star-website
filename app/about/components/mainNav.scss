@@ -1,0 +1,58 @@
+/*--- style mainNav.jsx ---*/
+@import '../../common/style/mainfn.scss';
+.goldStar-component-mainNav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .goldStar-component-mainNav-list {
+        text-align: center;
+        @include px2rem(width, 200);
+        @include px2rem(height, 150);
+        @include px2rem(padding-top, 30);
+        color: #333;
+        dt {
+            height: 150px;
+            line-height: 150px;
+            padding-top: 30px;
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .dt-list-cz {
+            background: url('../../common/image/mainNav/y1-1.png') no-repeat center;
+            background-size: 150px 150px;
+        }
+        .dt-list-xy {
+            background: url('../../common/image/mainNav/y2-1.png') no-repeat center;
+            background-size: 150px 150px;
+        }
+        .dt-list-xz {
+            background: url('../../common/image/mainNav/y3-1.png') no-repeat center;
+            background-size: 150px 150px;
+        }
+        .dt-list-sh {
+            background: url('../../common/image/mainNav/y4-1.png') no-repeat center;
+            background-size: 150px 150px;
+        }
+    }
+}
+
+.goldStar-component-mainNavCon {
+    @include px2rem(padding, 16);
+    h3 {
+        @include px2rem(font-size, 36);
+        color: #ff9104;
+    }
+    .mainNavCon-desc {
+        color: #ddd;
+        @include px2rem(font-size, 28);
+    }
+    .mainNavCon-msg {
+        @include px2rem(padding-top, 20);
+        @include px2rem(font-size, 30);
+        @include px2rem(letter-spacing, 1);
+        color: #999;
+    }
+}

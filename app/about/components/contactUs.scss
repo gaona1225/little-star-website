@@ -1,0 +1,59 @@
+/*--- style contactUs.jsx ---*/
+@import '../../common/style/mainfn.scss';
+
+.goldStar-component-contactUs {
+    background: url('../../common/image/contactUs/t12.jpg') repeat-y left top;
+    backgorund-size: auto 100%;
+    @include px2rem(padding, 30);
+    @include px2rem(padding-bottom, 100);
+
+    h2 {
+        @include px2rem(font-size, 32);
+        @include px2rem(height, 60);
+        @include px2rem(line-height, 60);
+        @include px2rem(width, 260);
+        text-align: center;
+        display: inline-block;
+        background: #abcd06;
+        border-radius: 10px;
+        color: #fff;
+        font-weight: 400;
+    }
+}
+
+.goldStar-component-contactUs-main {
+    background: #fff;
+    border-radius: 5px;
+    @include px2rem(margin-top, 30);
+    @include px2rem(padding, 20);
+
+    dl {
+        @include px2rem(margin-bottom, 30);
+        &:last-child {
+            @include px2rem(margin-bottom, 10);
+        }
+    }
+
+    dt {
+        @include px2rem(font-size, 30);
+        @include px2rem(line-height, 46);
+        @include px2rem(margin-bottom, 10);
+    }
+
+    dd {
+        @include px2rem(font-size, 24);
+        @include px2rem(line-height, 38);
+    }
+
+    .contactUs-address {
+        background: url('../../common/image/contactUs/gs1.jpg') no-repeat left center;
+        background-size: auto 80%;
+        @include px2rem(padding-left, 40);
+    }
+
+    .contactUs-tel {
+        background: url('../../common/image/contactUs/gs2.jpg') no-repeat left center;
+        background-size: auto 80%;
+        @include px2rem(padding-left, 40);
+    }
+}
