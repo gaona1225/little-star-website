@@ -9,8 +9,6 @@ let store = {
 }
 
 ReactDOM.render(
-    <div>
-        <AboutIndex />
-    </div>,
+    <AboutIndex />,
     document.getElementById('goldStarAbout')
 )

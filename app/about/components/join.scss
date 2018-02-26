@@ -1,0 +1,8 @@
+/*--- style join.jsx ---*/
+@import '../../common/style/mainfn.scss';
+
+.goldStar-component-join {
+    @include px2rem(padding, 30);
+    text-align: center;
+    background: url('../../common/image/publicImg/t12.png') no-repeat center bottom;
+}

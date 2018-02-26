@@ -6,10 +6,10 @@
         "isNewPage": true
     },
     {
-        "href": "/test",
+        "href": "/index",
         "text": "四大教育品牌",
         "desc": "BRANDS",
-        "isNewPage": false
+        "isNewPage": true
     },
     {
         "href": "/list",
@@ -18,16 +18,16 @@
         "isNewPage": true
     },
     {
-        "href": "/test",
+        "href": "/index",
         "text": "教育管理",
         "desc": "EDUCATION",
-        "isNewPage": false
+        "isNewPage": true
     },
     {
-        "href": "/test",
+        "href": "/index",
         "text": "家园共育",
         "desc": "TOGETHER",
-        "isNewPage": false
+        "isNewPage": true
     },
     {
         "href": "/about",
@@ -36,21 +36,21 @@
         "isNewPage": true
     },
     {
-        "href": "/test",
+        "href": "/about",
         "text": "加入小金星",
         "desc": "HR",
-        "isNewPage": false
+        "isNewPage": true
     },
     {
-        "href": "/list",
+        "href": "/about",
         "text": "合作办学",
         "desc": "JOIN US",
         "isNewPage": true
     },
     {
-        "href": "/test",
+        "href": "/index",
         "text": "金星燕商城",
         "desc": "SHOPPING",
-        "isNewPage": false
+        "isNewPage": true
     }
 ]

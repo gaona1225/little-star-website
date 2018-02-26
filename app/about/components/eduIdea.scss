@@ -1,0 +1,41 @@
+/*--- style eduIdea.jsx ---*/
+@import '../../common/style/mainfn.scss';
+
+.goldStar-component-eduIdea {
+    width: 100%;
+    text-align:center;
+    background: url('../../common/image/publicImg/t07.jpg') no-repeat left center;
+    @include px2rem(margin-top, 50);
+    @include px2rem(height, 600);
+
+    @at-root {
+        .goldStar-component-eduIdea-main {
+            width: 60%;
+            background: #f7f8ee;
+            border-radius: 5px;
+            @include px2rem(padding, 60);
+            margin: 0 auto;
+            text-align:left;
+
+            h3 {
+                background: url('../../common/image/publicImg/yse.jpg') no-repeat left center;
+                background-size: 124px 100px;
+                @include px2rem(padding-left, 100);
+                @include px2rem(font-size, 36);
+                color: #ff9104;
+                p {
+                    color: #ddd;
+                    @include px2rem(font-size, 28);
+                }
+            }
+
+            .goldStar-component-eduIdea-desc {
+                color: #666;
+                @include px2rem(font-size, 32);
+                @include px2rem(line-height, 48);
+                @include px2rem(margin-top, 30);
+                @include px2rem(max-height, 180);
+            }
+        }
+    }
+}
