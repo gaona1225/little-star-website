@@ -10,6 +10,7 @@ import Header from '../../components/layout/header.jsx';
 import Banner from '../../components/layout/banner.jsx';
 import Footer from '../../components/layout/footer.jsx';
 import MainNav from '../components/mainNav.jsx';
+import EduBrands from '../components/eduBrands.jsx';
 
 /*const name = 'zhangsan';
 const IndexApp = (store) => {
@@ -63,14 +64,9 @@ export default class IndexApp extends React.Component {
                 <Header />
                 <Banner />
                 <MainNav />
-                hi {this.state.name}, 欢迎来到goldStar-小金星幼儿园-首页!---IndexApp!
-                <p onClick = {this.handleClick}>
-                    点击我--发起请求
-                </p>
-                <p id="requestResult" className="goldStar-request-msg"></p>
-                <p>
-                    <Link to="/test">to IndexTest Page</Link>
-                </p>
+                <div className = "goldStar-indexpage-main">
+                    <EduBrands />
+                </div>
                 <Footer />
             </div>
         )

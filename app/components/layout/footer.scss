@@ -12,5 +12,6 @@
         color: #fff;
         @include px2rem(padding-left, 10);
         @include px2rem(padding-right, 10);
+        @include px2rem(padding-top, 10);
     }
 }

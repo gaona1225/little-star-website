@@ -1,10 +1,8 @@
-/*--- style index.html ---*/
+/*--- style about.html ---*/
 @import '../../common/style/mainfn.scss';
 
-$color: #aaaaaa;
-.goldStar-indexpage {
+.goldStar-about {
     color: $color;
-    // @include borderfn(red);
     @at-root {
         .goldStar-indexpage-main {
             background: url('../../common/image/t01.jpg') no-repeat center top;

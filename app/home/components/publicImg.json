@@ -1,0 +1,34 @@
+[
+    {
+        "href": "",
+        "publicImgName": "t03.jpg",
+        "publicImgNameAlt": "t03",
+        "publicImgLogo": "l01.png",
+        "publicImgLogoAlt": "l01",
+        "publicSkinName": "orange"
+    },
+    {
+        "href": "",
+        "publicImgName": "t04.jpg",
+        "publicImgNameAlt": "t04",
+        "publicImgLogo": "l02.png",
+        "publicImgLogoAlt": "l02",
+        "publicSkinName": "blue"
+    },
+    {
+        "href": "",
+        "publicImgName": "t05.jpg",
+        "publicImgNameAlt": "t05",
+        "publicImgLogo": "l03.png",
+        "publicImgLogoAlt": "l03",
+        "publicSkinName": "lightgreen"
+    },
+    {
+        "href": "",
+        "publicImgName": "t06.jpg",
+        "publicImgNameAlt": "t06",
+        "publicImgLogo": "l04.png",
+        "publicImgLogoAlt": "l04",
+        "publicSkinName": "green"
+    }
+]

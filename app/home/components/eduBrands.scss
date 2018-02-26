@@ -1,0 +1,83 @@
+/*--- style eduBrands.jsx ---*/
+@import '../../common/style/mainfn.scss';
+
+.goldStar-component-eduBrands {
+    @include px2rem(padding, 16);
+    @include px2rem(font-size, 28);
+    color: #ddd;
+    h3 {
+        @include px2rem(font-size, 36);
+        color: #ff9104;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        @include px2rem(margin-top, 50);
+        @include px2rem(padding-bottom, 40);
+    }
+    li {
+        @include px2rem(height, 550);
+        position: relative;
+        width: 48%;
+    }
+
+    @at-root {
+        .eduBrands-imgElem {
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+        .eduBrands-mask {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            .eduBrands-mask-logo {
+                @include px2rem(height, 120);
+                @include px2rem(padding-top, 10);
+                border-radius: 20px 20px 0 0;
+                margin-bottom: -1px;
+                text-align: center;
+                img {
+                    @include px2rem(height, 100);
+                }
+            }
+            .eduBrands-mask-main-orange {
+                @include px2rem(height, 150);
+                background: url('../../common/image/publicImg/te01.png') no-repeat right top;
+                background-size: 100% 150px;
+            }
+            .mask-logo-orange {
+                background: #f39700;
+
+            }
+            .eduBrands-mask-main-blue {
+                @include px2rem(height, 150);
+                background: url('../../common/image/publicImg/te02.png') no-repeat right top;
+                background-size: 100% 150px;
+            }
+            .mask-logo-blue {
+                background: #7ccdf3;
+                
+            }
+            .eduBrands-mask-main-lightgreen {
+                @include px2rem(height, 150);
+                background: url('../../common/image/publicImg/te03.png') no-repeat right top;
+                background-size: 100% 150px;
+            }
+            .mask-logo-lightgreen {
+                background: #abcd06;
+                
+            }
+            .eduBrands-mask-main-green {
+                @include px2rem(height, 150);
+                background: url('../../common/image/publicImg/te04.png') no-repeat right top;
+                background-size: 100% 150px;
+            }
+            .mask-logo-green {
+                background: #009944;
+                
+            }
+        }
+    }
+}
