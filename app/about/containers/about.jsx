@@ -9,7 +9,6 @@ import {
 import Header from '../../components/layout/header.jsx';
 import Banner from '../../components/layout/banner.jsx';
 import Footer from '../../components/layout/footer.jsx';
-import EduIdea from '../components/eduIdea.jsx';
 import Join from '../components/join.jsx';
 
 export default class AboutIndex extends React.Component {
@@ -32,7 +31,6 @@ export default class AboutIndex extends React.Component {
                 <Header />
                 <Banner />
                 <Join />
-                <EduIdea />
                 <Footer />
             </div>
         )

@@ -11,6 +11,7 @@ import Banner from '../../components/layout/banner.jsx';
 import Footer from '../../components/layout/footer.jsx';
 import MainNav from '../components/mainNav.jsx';
 import EduBrands from '../components/eduBrands.jsx';
+import EduIdea from '../components/eduIdea.jsx';
 
 /*const name = 'zhangsan';
 const IndexApp = (store) => {
@@ -66,6 +67,7 @@ export default class IndexApp extends React.Component {
                 <MainNav />
                 <div className = "goldStar-indexpage-main">
                     <EduBrands />
+                    <EduIdea />
                 </div>
                 <Footer />
             </div>
