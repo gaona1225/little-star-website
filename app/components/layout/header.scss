@@ -11,7 +11,8 @@
     @at-root {
         .goldStar-component-header-logo-img {
             background: url('../../common/image/logo.png') no-repeat left center;
-            @include px2rem(width, 165);
+            background-size: auto 100%;
+            @include px2rem(width, 320);
             @include px2rem(height, 50);
             display: inline-block;
         }
