@@ -23,7 +23,7 @@ export default class NewsCard extends React.Component {
     }
 
     render() {
-        let cardItem = this.props.newsCardList;
+        let cardItem = this.props.newscardList;
         return (
             <div className = "goldStar-component-newsCard">
                 <img src = {require(`../../common/image/upload/${cardItem.img}`)} alt = {cardItem.img} />

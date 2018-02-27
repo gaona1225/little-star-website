@@ -56,7 +56,7 @@ export default class MainNews extends React.Component {
         const isGetList = this.state.isGetList;
         if (isGetList) {
             newsCardList.map((value, index) => {
-                NewsCardDom.push(<NewsCard key = {index} newsCardList = {value} />);
+                NewsCardDom.push(<NewsCard key = {index} newscardList = {value} />);
             });
         }
         return (

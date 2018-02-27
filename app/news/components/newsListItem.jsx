@@ -6,9 +6,6 @@ import React from 'react';
 import {
     Link
 } from 'react-router-dom';
-import axios from 'axios';
-import Loading from '../../components/layout/loading.jsx';
-import './newsCard.scss';
 
 export default class NewsListItem extends React.Component {
     constructor (props) {
@@ -24,8 +21,20 @@ export default class NewsListItem extends React.Component {
     }
 
     render() {
+        const newsDataList = this.props.newsDataList;
+        let linkEle = null;
+        linkEle = newsDataList.map((item, key) => {
+            return (
+                <Link key = {key} to = '/newsDetail' className = 'component-newsItem-Elem'>
+                    <span className="component-newsItem-main">{item.title}</span>
+                    <span>{item.time}</span>
+                </Link>
+            )
+        });
         return (
-            <Link to = '/newsDetail' className = 'component-newsItem-Elem'><span className="component-newsItem-main">111</span><span>2018-02-07</span></Link>
+            <div>
+                {linkEle}
+            </div>
         )
     }
 }

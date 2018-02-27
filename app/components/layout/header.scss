@@ -49,6 +49,7 @@
             
             a {
                 color: #000;
+                display: block;
                 span {
                     @include px2rem(font-size, 20);
                     @include px2rem(padding-left, 4);
