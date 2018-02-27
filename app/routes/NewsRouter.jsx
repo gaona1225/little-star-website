@@ -15,6 +15,7 @@ import {
 import NewsIndex from '../news/containers/news.jsx';
 import NewsList from '../news/containers/newsList.jsx';
 import NewsDetail from '../news/containers/newsDetail.jsx';
+import NewsRedux from '../news/containers/newsRedux.jsx';
 
 const AppNewsRouter = (store) => {
     return (
@@ -24,6 +25,7 @@ const AppNewsRouter = (store) => {
                 <Route path="/news" component={NewsIndex}/>
                 <Route path="/newslist" component={NewsList}/>
                 <Route path="/newsDetail" component={NewsDetail}/>
+                <Route path="/reduxTest" component={NewsRedux}/>
                 <Redirect from="/" to="/news" />
               </Switch>
           </div>

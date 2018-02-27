@@ -28,6 +28,7 @@ export default class MainDetail extends React.Component {
                 <h3>{newsDetailData.title}</h3>
                 <h4>作者：{newsDetailData.author}   发布时间：{newsDetailData.time}   浏览：{newsDetailData.readerNum}</h4>
                 <p>{newsDetailData.desc}</p>
+                <Link to = "/reduxTest">reduxTest</Link>
             </div>
         )
     }
