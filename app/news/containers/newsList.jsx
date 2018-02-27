@@ -9,6 +9,8 @@ import {
 import Header from '../../components/layout/header.jsx';
 import Banner from '../../components/layout/banner.jsx';
 import Footer from '../../components/layout/footer.jsx';
+import NewsListItem from '../components/newsListItem.jsx';
+import '../containers/newsList.scss';
 
 export default class NewsList extends React.Component {
     constructor (props) {
@@ -24,10 +26,14 @@ export default class NewsList extends React.Component {
     }
 
     render() {
+        // console.log(this.state.newsCardList);
         return (
             <div className = "goldStar-news">
                 <Header />
                 <Banner />
+                <div className = "goldStar-component-newsItem">
+                    <NewsListItem />
+                </div>
                 <Footer />
             </div>
         )

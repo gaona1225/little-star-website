@@ -1,0 +1,28 @@
+/*--- style newsList.jsx ---*/
+@import '../../common/style/mainfn.scss';
+
+.goldStar-component-newsItem {
+    @include px2rem(margin-top, 30);
+    @at-root {
+        .component-newsItem-Elem {
+            @include px2rem(height, 60);
+            @include px2rem(line-height, 60);
+            @include px2rem(padding-left, 10);
+            @include px2rem(padding-right, 10);
+            @include px2rem(font-size, 28);
+            border-bottom: 1px dashed #aaa;
+            color: #111;
+            display: flex;
+            justify-content: space-between;
+            .component-newsItem-main {
+                width: 70%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            span {
+                @include px2rem(font-size, 24);
+                color: #aaa;
+            }
+        }
+    }
+}

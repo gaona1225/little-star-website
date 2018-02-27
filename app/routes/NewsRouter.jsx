@@ -14,6 +14,7 @@ import {
 
 import NewsIndex from '../news/containers/news.jsx';
 import NewsList from '../news/containers/newsList.jsx';
+import NewsDetail from '../news/containers/newsDetail.jsx';
 
 const AppNewsRouter = (store) => {
     return (
@@ -22,6 +23,7 @@ const AppNewsRouter = (store) => {
               <Switch>
                 <Route path="/news" component={NewsIndex}/>
                 <Route path="/newslist" component={NewsList}/>
+                <Route path="/newsDetail" component={NewsDetail}/>
                 <Redirect from="/" to="/news" />
               </Switch>
           </div>

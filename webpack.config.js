@@ -41,6 +41,11 @@ module.exports = {
             template: './app/views/data/getRequest.html',
             filename: 'views/data/getRequest.html',
             chunksSortMode: 'manual'
+        }),
+        new HtmlWepackPlugin({
+            template: './app/views/data/getNewsDetail.html',
+            filename: 'views/data/getNewsDetail.html',
+            chunksSortMode: 'manual'
         })
     ],
     module: {

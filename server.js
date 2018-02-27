@@ -72,6 +72,10 @@ app.get('/getRequest', function (req, res) {
   res.render('views/data/getRequest.html');
 });
 
+app.get('/getNewsDetail', function (req, res) {
+  res.render('views/data/getNewsDetail.html');
+});
+
 module.exports = app.listen(5000, function(err) {
     if (err) {
         console.log(err);

@@ -1,0 +1,25 @@
+/*--- style mainDetail.jsx ---*/
+@import '../../common/style/mainfn.scss';
+
+.goldStar-component-mainDetail {
+    @include px2rem(padding, 30);
+    text-align: center;
+    h3 {
+        color: #f39800;
+        @include px2rem(font-size, 32);
+        @include px2rem(line-height, 48);
+    }
+    h4 {
+        color: #999;
+        @include px2rem(font-size, 24);
+        @include px2rem(line-height, 36);
+        @include px2rem(margin-top, 30);
+    }
+    p {
+        text-align: left;
+        text-indent:2em;
+        @include px2rem(font-size, 28);
+        @include px2rem(line-height, 48);
+        @include px2rem(margin-top, 30);
+    }
+}
