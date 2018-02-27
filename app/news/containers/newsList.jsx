@@ -26,7 +26,6 @@ export default class NewsList extends React.Component {
     }
 
     render() {
-        // console.log(this.state.newsCardList);
         return (
             <div className = "goldStar-news">
                 <Header />

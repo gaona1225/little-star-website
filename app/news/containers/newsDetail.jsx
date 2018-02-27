@@ -35,7 +35,6 @@ export default class NewsDetail extends React.Component {
             }
             let obj = res.data;
             if (obj.errInfo.no === '0') {
-                console.log('成功');
                 detailData = obj.data;
                 this.setState({
                     isGetList: true

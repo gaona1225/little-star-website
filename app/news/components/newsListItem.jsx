@@ -25,9 +25,7 @@ export default class NewsListItem extends React.Component {
 
     render() {
         return (
-            <div>
-                <Link to = '/newsDetail' className = 'component-newsItem-Elem'><span className="component-newsItem-main">111</span><span>2018-02-07</span></Link>
-            </div>
+            <Link to = '/newsDetail' className = 'component-newsItem-Elem'><span className="component-newsItem-main">111</span><span>2018-02-07</span></Link>
         )
     }
 }
