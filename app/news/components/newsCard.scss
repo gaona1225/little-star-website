@@ -1,0 +1,38 @@
+/*--- style mainNews.jsx ---*/
+@import '../../common/style/mainfn.scss';
+
+.goldStar-component-newsCard {
+    background: #fff;
+    box-shadow: 0 0 30px #999;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    &:not(:last-child) {
+        @include px2rem(margin-bottom, 30);
+    }
+    img {
+        width: 120%;
+        height: 100%;
+    }
+
+    dl {
+        @include px2rem(padding, 20);
+        @include px2rem(width, 1200);
+        dt {
+            @include px2rem(font-size, 28);
+            @include px2rem(height, 72);
+            @include px2rem(line-height, 36);
+            @include px2rem(margin-bottom, 12);
+            color: #f39700;
+            overflow: hidden;
+        }
+        dd {
+            overflow: hidden;
+            @include px2rem(line-height, 28);
+            &:not(:last-child) {
+                @include px2rem(height, 56);
+                @include px2rem(margin-bottom, 16);
+            }
+        }
+    }
+}

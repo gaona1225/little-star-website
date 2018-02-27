@@ -6,6 +6,10 @@ import React from 'react';
 import {
     Link
 } from 'react-router-dom';
+import Header from '../../components/layout/header.jsx';
+import Banner from '../../components/layout/banner.jsx';
+import Footer from '../../components/layout/footer.jsx';
+import MainNews from '../components/MainNews.jsx';
 
 export default class NewsIndex extends React.Component {
     constructor (props) {
@@ -20,11 +24,13 @@ export default class NewsIndex extends React.Component {
         e.preventDefault(e);
     }
 
-
     render() {
         return (
             <div className = "goldStar-news">
-                news
+                <Header />
+                <Banner />
+                <MainNews />
+                <Footer />
             </div>
         )
     }

@@ -1,0 +1,94 @@
+/*--- style mainNews.jsx ---*/
+@import '../../common/style/mainfn.scss';
+
+.goldStar-component-mainNews {
+    @include px2rem(padding, 16);
+
+    @at-root {
+        .component-mainNews-title {
+            @include px2rem(padding-top, 16);
+            display: flex;
+            justify-content: space-between;
+            h3 {
+                @include px2rem(font-size, 36);
+                color: #ff9104;
+
+                p {
+                    @include px2rem(font-size, 28);
+                    color: #ddd;
+                }
+            }
+        }
+
+        .goldStar-component-moreNews {
+            @include px2rem(font-size, 32);
+            @include px2rem(height, 60);
+            @include px2rem(line-height, 60);
+            @include px2rem(width, 260);
+            text-align: center;
+            display: inline-block;
+            background: #f48b04;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        .component-mainNews-list {
+            background: #f39800;
+            box-shadow: 0 0 30px #999;
+            color: #fff;
+            img {
+                width: 100%;
+            }
+
+            dl {
+                @include px2rem(padding, 20);
+                dt {
+                    overflow: hidden;
+                    @include px2rem(font-size, 28);
+                    @include px2rem(height, 26);
+                    @include px2rem(line-height, 28);
+                    @include px2rem(margin-bottom, 12);
+                }
+                dd {
+                    @include px2rem(line-height, 28);
+                    &:not(:last-child) {
+                        @include px2rem(margin-bottom, 12);
+                    }
+                }
+            }
+        }
+
+        .component-mainNews-banner {
+            @include px2rem(margin-top, 30);
+        }
+
+        .component-mainNews-views {
+            background: #fff;
+            box-shadow: 0 0 30px #999;
+            color: #999;
+            @include px2rem(padding-bottom, 30);
+            @include px2rem(margin-bottom, 60);
+            @include px2rem(margin-top, 30);
+            img {
+                width: 100%;
+            }
+
+            dl {
+                @include px2rem(padding, 20);
+                dt {
+                    @include px2rem(font-size, 28);
+                    @include px2rem(line-height, 36);
+                    @include px2rem(margin-bottom, 12);
+                    color: #f39700;
+                }
+                dd {
+                    @include px2rem(line-height, 28);
+                    &:not(:last-child) {
+                        @include px2rem(margin-bottom, 32);
+                    }
+                }
+            }
+        }
+    }
+}

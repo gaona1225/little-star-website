@@ -4,7 +4,7 @@
 /*--- reset end ---*/
 
 body {
-    font-family: "PingFang SC, Helvetica, sans-serif, Microsoft Yahei";
+    font-family: "Microsoft Yahei, Helvetica, sans-serif";
     @include px2rem(font-size, 24);
     -webkit-user-select: none;
        -moz-user-select: none;

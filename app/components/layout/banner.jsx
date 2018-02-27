@@ -32,7 +32,6 @@ export default class Banner extends React.Component {
     }
 
     componentDidMount () {
-        console.log('componentDidMount');
         // console.log($.fn.jquery);
         $('#full_feature').swipeslider({
             prevNextButtons: false,
