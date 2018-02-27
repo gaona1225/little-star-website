@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NewsIndex from '../../news/containers/news.jsx';
+import AppNewsRouter from '../../routes//NewsRouter.jsx';
 import './list.scss';
 
 let store = {
@@ -10,7 +10,7 @@ let store = {
 
 ReactDOM.render(
     <div>
-        <NewsIndex />
+        <AppNewsRouter />
     </div>,
     document.getElementById('goldStarNews')
 )

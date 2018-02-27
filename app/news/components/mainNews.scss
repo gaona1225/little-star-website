@@ -37,6 +37,7 @@
             background: #f39800;
             box-shadow: 0 0 30px #999;
             color: #fff;
+            @include px2rem(margin-top, 30);
             img {
                 width: 100%;
             }

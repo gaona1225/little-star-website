@@ -67,7 +67,7 @@ export default class MainNews extends React.Component {
                         小金星动态
                         <p>Little Star News</p>
                     </h3>
-                    <a href = "javascript:;" className = "goldStar-component-moreNews">更多新闻</a>
+                    <Link to ='/newslist' className = "goldStar-component-moreNews">更多新闻</Link>
                 </div>
                 <div className = "component-mainNews-list">
                     <img src = {require('../../common/image/upload/newsBanner.jpg')} alt = "newsBanner" />
