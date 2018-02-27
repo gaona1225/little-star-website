@@ -21,10 +21,23 @@ export default class newsRedux extends React.Component {
     }
 
     render() {
+        console.log(this.props.location);
+        const linkData = this.props.location;
         return (
             <div className = "goldStar-component-newsRedux">
-                <h3>title-newsRedux</h3>
-                <p>desc-newsReduxnewsReduxnewsReduxnewsRedux</p>
+                <div>
+                    <h1>Link Data</h1>
+                    <h3>title-{linkData.mainDetailObj.title}</h3>
+                    <p>desc-{linkData.mainDetailObj.desc}</p>
+                    <p>form-{linkData.pagename}</p>     
+                </div>
+                <br/>
+                <div>
+                    <h1>redux Data</h1>
+                    <h3>title-redux Data</h3>
+                    <p>desc-redux Dataredux Dataredux Data</p>
+                    <p>form-redux form</p>     
+                </div>
             </div>
         )
     }

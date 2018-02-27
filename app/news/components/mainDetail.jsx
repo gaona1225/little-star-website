@@ -23,12 +23,21 @@ export default class MainDetail extends React.Component {
 
     render() {
         const newsDetailData = this.props.mainnewsdetail;
+        let LinkData = {
+            pathname: '/reduxTest',
+            pagename: 'mainDetail',
+            mainDetailObj: {
+                'title': 'mainDetailTitle',
+                'desc': 'mainDetailDesc'
+            }
+        }
         return (
             <div className = "goldStar-component-mainDetail">
                 <h3>{newsDetailData.title}</h3>
                 <h4>作者：{newsDetailData.author}   发布时间：{newsDetailData.time}   浏览：{newsDetailData.readerNum}</h4>
                 <p>{newsDetailData.desc}</p>
-                <Link to = "/reduxTest">reduxTest</Link>
+                <Link to = {LinkData}>LinkData</Link><br/><br/>
+                <Link to = {LinkData}>ReduxData</Link><br/><br/>
             </div>
         )
     }
