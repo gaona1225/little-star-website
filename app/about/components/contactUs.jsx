@@ -3,7 +3,6 @@
  * @author gaona
  */
 import React from 'react';
-import axios from 'axios';
 import './contactUs.scss';
 
 let contactList = require('./contactUsList.json');

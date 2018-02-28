@@ -53,11 +53,20 @@ export default class MainNews extends React.Component {
 
     render() {
         let NewsCardDom = [];
+        let LinkData = {
+            pathname: '/newslist',
+            testname: 'gg'
+        };
         const isGetList = this.state.isGetList;
         if (isGetList) {
             newsCardList.map((value, index) => {
                 NewsCardDom.push(<NewsCard key = {index} newscardList = {value} />);
             });
+            LinkData = {
+                pathname: '/newslist',
+                testname: 'gaonaTest',
+                newslist: newsCardList
+            }
         }
         return (
             <div className = "goldStar-component-mainNews">
@@ -66,7 +75,7 @@ export default class MainNews extends React.Component {
                         小金星动态
                         <p>Little Star News</p>
                     </h3>
-                    <Link to ='/newslist' className = "goldStar-component-moreNews">更多新闻</Link>
+                    <Link to = {LinkData} className = "goldStar-component-moreNews">更多新闻</Link>
                 </div>
                 <div className = "component-mainNews-list">
                     <img src = {require('../../common/image/upload/newsBanner.jpg')} alt = "newsBanner" />
